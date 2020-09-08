@@ -1,0 +1,7 @@
+Flask
+HTMLTestRunner-Python3
+unittest-xml-reporting
+wit
+pymessenger
+gunicorn
+psycopg2
