@@ -35,12 +35,6 @@ def receive_message():
     return "Message Processed"
 
 
-@app.route("/process_text", methods=["POST"])
-def process_text():
-    output = request.get_json()
-    utils.extract_information(output["query"])
-    return "done"
-
 
 if __name__ == "__main__":
     logging.info('App is running successfully')
