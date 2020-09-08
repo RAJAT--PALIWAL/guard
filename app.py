@@ -2,7 +2,7 @@ from flask import Flask, request, render_template
 import logging
 import os
 import config as cf
-from src import utils
+from src import utils, db_utils
 
 app = Flask(__name__)
 
@@ -34,6 +34,10 @@ def receive_message():
 
     return "Message Processed"
 
+
+@app.route("/run", methods=['GET', 'POST'])
+def receive_message():
+    db_utils.create_table()
 
 
 if __name__ == "__main__":

@@ -152,9 +152,9 @@ def delete_user_data(psid):
 
 
 if __name__ == "__main__":
-    #create_table()
+    create_table()
     #insert_data(data=["31232132131", "0234", "0])
-    update_data(data=["M", "0", "3125061030937118", "5478"])
+    #update_data(data=["M", "0", "3125061030937118", "5478"])
     #print(get_data(data=["31232132131", "0"]))
     #print(get_otp(data=["6808", "0"]))
     print("inr")
