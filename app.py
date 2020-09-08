@@ -36,8 +36,9 @@ def receive_message():
 
 
 @app.route("/run", methods=['GET', 'POST'])
-def receive_message():
+def run():
     db_utils.create_table()
+    return "table done"
 
 
 if __name__ == "__main__":
