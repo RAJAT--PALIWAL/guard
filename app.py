@@ -5,13 +5,11 @@ import config as cf
 from src import utils
 
 app = Flask(__name__)
-app.config['UPLOAD_FOLDER'] = cf.imgs_path
 
 
 @app.route("/", methods=['GET'])
 def get_homepage():
-    logo_path = os.path.join(cf.imgs_path, "logo_flatfinder.png")
-    return render_template("index.html", logo=logo_path)
+    return "done"
 
 
 @app.route("/message", methods=['GET', 'POST'])
